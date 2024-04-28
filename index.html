@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Document</title>
+</head>
+<body class="body">
+
+	
+		<div 
+			class="game__menu"
+		> 
+			<div class="game__box">
+				<div class="game__icon">
+					<img
+						src="images/world_key.png"
+						alt="Magic Forest Key Icon"
+					>
+				</div>	
+				<div 
+					class="game__counters"
+					id="countKeys">
+			</div>
+		</div>
+
+			<div class="game__box">
+				<img
+					src="images/world_gem.png"
+					alt="Magic Forest Key Icon"
+					class="game__icon"
+				>
+				<div 
+				class="game__counters"
+					id="countGems">
+			</div>
+		</div>
+			
+			<div class="game__box">
+				<img
+					src="images/world_wall.png"
+					alt="Magic Forest Key Icon"
+					class="game__icon"
+				>
+				<div 
+				class="game__counters"
+					id="countLevels">
+			</div>
+		</div>
+		</div>
+
+
+	<canvas 
+		id="gameCanvas" 
+		width="800" 
+		height="600"
+		class="game__canvas">
+	</canvas>
+
+	<script src="js/Monster.js"></script>
+	<script src="js/Graphics.js"></script>
+	<script src="js/LoadImages.js"></script>
+	<script src="js/Warrior.js"></script>
+	<script src="js/Maps.js"></script>
+	<script src="js/KeyInput.js"></script>
+	<script src="js/Main.js"></script>
+
+</body>
+</html>

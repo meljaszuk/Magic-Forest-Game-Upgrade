@@ -1,0 +1,49 @@
+.body {
+    
+    background-image: linear-gradient(to left, #182700, rgb(208, 221, 68));
+   
+}
+
+
+
+.game__menu {
+    display: flex;
+    border-bottom: rgb(208, 221, 68) 1px solid;
+    width: 800px;
+    background-color: #182700;
+    justify-content: space-between;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+.game__box {
+    display: flex;
+
+
+    
+    
+}
+
+.game__icon {
+
+    display: flex;
+    padding: 10px;
+}
+
+.game__counters {
+   
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(208, 221, 68);
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    
+   
+}
