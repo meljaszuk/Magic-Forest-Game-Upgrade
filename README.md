@@ -31,3 +31,7 @@ Implementing multiple lives, allowing players to gain and lose lives, and resett
 
 ## Summary: 
 Throughout this project, I delved into JavaScript's object-oriented programming paradigm, mastering concepts like classes and constructors to enhance the codebase. I updated outdated practices to modern standards and debugged to ensure seamless functionality. By integrating new features such as traps and scoring systems, I deepened my expertise in JS app development.
+
+**Demo Version:** [DEMO](https://meljaszuk.github.io/Magic-Forest-Game-Upgrade/)
+
+**Code Repository:** [CODE](https://github.com/meljaszuk/Magic-Forest-Game-Upgrade)
