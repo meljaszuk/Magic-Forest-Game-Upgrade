@@ -15,13 +15,16 @@ I addressed several issues with the code, including outdated practices such as u
 I conducted thorough testing to ensure the game's functionality. I checked if it was possible to win the game and tested all functionalities after every significant code modification, which boosts my confidence in the project. 
 
 Bug 1: A warrior character with coordinates (x 251, y 251) caused the game to end unexpectedly, despite being far away from a dynamic fireball. This was caused by a piece of code that was accidentally left in. 
-![Tekst zastępczy](src/BUG1.jpg)
+
+![Screen with bug](src/BUG1.jpg)
 
 Bug 2: The 'endGame' function was called multiple times after losing a game. I rectified this issue to ensure it is only called once. 
-![Tekst zastępczy](src/BUG2.jpg)
+
+![Screen with bug](src/BUG2.jpg)
 
 Bug 3: After uploading Level 2, the warrior was erroneously placed on a fireball tile, resulting in an immediate game over.
-![Tekst zastępczy](src/BUG3.jpg)
+
+![Screen with bug](src/BUG3.jpg)
 
 ## Future considerations: 
 Implementing multiple lives, allowing players to gain and lose lives, and resetting the game after all lives are lost. Introducing the ability to gain lives during gameplay, similar to collecting gems and keys. Incorporating multiple dynamic fireballs, each with different directions or changeable speeds.
