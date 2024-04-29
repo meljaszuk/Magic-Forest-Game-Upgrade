@@ -26,7 +26,7 @@
       display: flex;
       padding: 10px;
   }
-  
+ 
   .game__counters {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: var(--text-color);
@@ -35,3 +35,21 @@
       align-items: center;
   }
   
+  @media screen and (min-width: 820px) and (min-height: 730px) {
+    .media-alert {
+      display: none;
+    }
+  }
+   @media screen and (max-width: 819px), (max-height: 729px) {
+    .game__canvas, .game__menu {
+      display: none;
+    }
+  }
+
+  .media-alert {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
