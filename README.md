@@ -35,3 +35,5 @@ Throughout this project, I delved into JavaScript's object-oriented programming 
 **Demo Version:** [DEMO](https://meljaszuk.github.io/Magic-Forest-Game-Upgrade/)
 
 **Code Repository:** [CODE](https://github.com/meljaszuk/Magic-Forest-Game-Upgrade)
+
+**Credit:** https://www.udemy.com/course/how-to-program-games/
