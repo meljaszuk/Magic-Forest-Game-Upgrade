@@ -1,82 +1,56 @@
- 	function createHorizontalMonster(HorizontalMonsterX, HorizontalMonsterY, leftLimit, rightLimit, speedMonster) {
-		/* let speedMonster = 2;
-		let HorizontalMonsterX = 75;
-		let HorizontalMonsterY = 275;
-		let leftLimit = 40;
-		let rightLimit = 700; */
+class Monster {
+    constructor(monsterX, monsterY, firstLimit, secondLimit, speedMonster, monsterType) {
+        this.monsterPic = new Image();
+        this.monsterPic.src = "images/world_monster.png";
+        
+        if (monsterType === 'horizontal') {
+            this.x = monsterX;
+            this.y = monsterY;
+            this.name = "Monster";
 
-		this.x = HorizontalMonsterX;
-		this.y = HorizontalMonsterY;
-		this.name = "Monster";
-		this.monsterPic = new Image(); // Inicjalizacja obiektu Image
+            this.moveHorizontally = function() {
+                if (isGameActive) {
+                    this.x += speedMonster;
 
-		// Ustawienie src obrazu
-		this.monsterPic.src = "images/world_monster.png";
+                    if (this.x < secondLimit) {
+                        speedMonster *= -1;
+                    }
+                    if (this.x > firstLimit) {
+                        speedMonster *= -1;
+                    }
+                } else {
+                    this.x = -200;
+                }
+            };
 
-		console.log(this.monsterPic);
+            this.draw = function() {
+                drawBitmapCenteredMonster(this.monsterPic, this.x, this.y, 0);
+            };
+        }
 
+        if (monsterType === 'vertical') {
+            this.x = monsterX;
+            this.y = monsterY;
+            this.name = "Monster";
 
-		this.moveHorizontally = function() {
-		
-			if (isGameActive) {
-				this.x = this.x + speedMonster;
-	
-				if(this.x < rightLimit) {
-					speedMonster *= -1;
-				}
-				if(this.x > leftLimit) {
-					speedMonster *= -1;
-				} 
-			} else {
-				this.x = -200;
-			}
-			
-			} 
+            this.moveVertically = function() {
+                if (isGameActive) {
+                    this.y += speedMonster;
 
+                    if (this.y < firstLimit) {
+                        speedMonster *= -1;
+                    }
+                    if (this.y > secondLimit) {
+                        speedMonster *= -1;
+                    }
+                } else {
+                    this.y = -200;
+                }
+            };
 
-
-		this.draw = function() {
-			drawBitmapCenteredMonster(this.monsterPic, this.x,this.y, 0);
-		}
-	}
-
-
-	function createVerticalMonster(VerticalMonsterX,VerticalMonsterY,topLimit,bottomLimit,speedMonster) {
-	/* 	let VerticalMonsterX = 275;
-		let VerticalMonsterY = 175;
-		let topLimit = 120;
-		let bottomLimit = 500;
-		let speedMonster = 2; */
-
-		this.x = VerticalMonsterX;
-		this.y = VerticalMonsterY;
-		this.name = "Monster";
-		this.monsterPic = new Image(); // Inicjalizacja obiektu Image
-
-		// Ustawienie src obrazu
-		this.monsterPic.src = "images/world_monster.png";
-
-		console.log(this.monsterPic);
-
-		
-		this.moveVertically = function() {
-		
-		if (isGameActive) {
-			this.y = this.y + speedMonster;
-
-			if(this.y < topLimit) {
-				speedMonster *= -1;
-			}
-			if(this.y > bottomLimit) {
-				speedMonster *= -1;
-			} 
-		} else {
-			this.y = -200;
-		}
-		
-		} 
-
-		this.draw = function() {
-			drawBitmapCenteredMonster(this.monsterPic, this.x,this.y, 0);
-		}
-	}
+            this.draw = function() {
+                drawBitmapCenteredMonster(this.monsterPic, this.x, this.y, 0);
+            };
+        }
+    }
+}
