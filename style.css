@@ -35,12 +35,12 @@
       align-items: center;
   }
   
-  @media screen and (min-width: 820px) and (min-height: 730px) {
+  @media screen and (min-width: 820px) and (min-height: 700px) {
     .media-alert {
       display: none;
     }
   }
-   @media screen and (max-width: 819px), (max-height: 729px) {
+   @media screen and (max-width: 819px), (max-height: 699px) {
     .game__canvas, .game__menu {
       display: none;
     }
