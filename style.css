@@ -1,55 +1,59 @@
 :root {
-    --bg-gradient-start: #182700;
-    --bg-gradient-end: rgb(208, 221, 68);
+    --dark-green: #182700;
     --text-color: rgb(208, 221, 68);
+    --bg-color: white;
   }
   
-  .body {
-      background-image: linear-gradient(to left, var(--bg-gradient-start), var(--bg-gradient-end));
-  }
+.body {
+    background-color: var(--bg-color);
+    text-align: center;
+    margin: auto;
+}
   
-  .game__menu {
-      display: flex;
-      border-bottom: 1px solid var(--bg-gradient-end);
-      width: 800px;
-      background-color: var(--bg-gradient-start);
-      justify-content: space-between;
-      padding: 5px 20px;
-      box-sizing: border-box;
-  }
-  
-  .game__box {
-      display: flex;
-  }
-  
-  .game__icon {
-      display: flex;
-      padding: 10px;
-  }
- 
-  .game__counters {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: var(--text-color);
-      display: flex;
-      box-sizing: border-box;
-      align-items: center;
-  }
-  
-  @media screen and (min-width: 820px) and (min-height: 700px) {
-    .media-alert {
-      display: none;
-    }
-  }
-   @media screen and (max-width: 819px), (max-height: 699px) {
-    .game__canvas, .game__menu {
-      display: none;
-    }
-  }
+.game__menu {
+    display: flex;
+    border-bottom: 1px solid var(--text-color);
+    width: 800px;
+    background-color: var(--dark-green);
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: auto;
+}
 
-  .media-alert {
+.game__box {
+    display: flex;
+}
+
+.game__icon {
+    display: flex;
+    padding: 10px;
+}
+
+.game__counters {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: var(--text-color);
+    display: flex;
     box-sizing: border-box;
     align-items: center;
-  }
+}
 
+@media screen and (min-width: 820px) and (min-height: 600px) {
+    .media-alert {
+        display: none;
+    }
+}
+@media screen and (max-width: 819px), (max-height: 599px) {
+    .game__canvas, .game__menu {
+        display: none;
+    }
+}
+
+.media-alert {
+    justify-content: center;
+    padding-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--dark-green);
+    box-sizing: border-box;
+    align-items: center;
+}
